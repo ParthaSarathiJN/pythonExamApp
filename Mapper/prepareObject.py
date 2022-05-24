@@ -27,3 +27,18 @@ def prepareObjectLoginTimeFunction(emailID, loginTime):
         }
     
     return loginTimeDict
+
+def prepareObjectMCQAnswersFunction(emailID, QuestionListForMCQ, answerListForMCQ):
+    
+    MCQQuestionAndAnswerDict = {
+        'email':emailID,
+        QuestionListForMCQ[0]:answerListForMCQ[0],
+        QuestionListForMCQ[1]:answerListForMCQ[1],
+        QuestionListForMCQ[2]:answerListForMCQ[2],
+        QuestionListForMCQ[3]:answerListForMCQ[3],
+        QuestionListForMCQ[4]:answerListForMCQ[4]
+        }
+        
+    #print(MCQQuestionAndAnswerDict)
+    
+    return MCQQuestionAndAnswerDict
